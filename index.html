@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="style.css"
+  <title></title>
+  <script defer src='script.js'></script>
+</head>
+<body>
+  <img src="logomario.png" class="logo">
+  <div class="game-board">
+    
+    <button class="btn" onclick="play()">START</button>
+    
+    <img src="clouds.png" class="clouds">
+    <img src="pipe.png" class="pipe">
+    <img src="mario.gif" class="mario">
+    
+  </div>
+  <div class="timer-container">
+    <span class="timer">TIME: 0</span>
+    <span class="bestScore">NEW RECORD: 0</span>
+  </div>
+  
+  <div class="audio-player">
+    <audio controls loop autoplay class="som">
+      <source src="mariosong.mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+    </audio>
+  </div>
+  <footer>
+      <p class="footer">Adaptado por Bruno B Bacellar, Good Game ;)</p>
+  </footer>
+</body>
+</html>
