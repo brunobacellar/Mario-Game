@@ -61,7 +61,7 @@ body {
     color: #f8c400;
     text-shadow: 1px 1px 2px #f8c400a9;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 36px;
     width: 100vw;
     height: 13vh;
 }
@@ -119,8 +119,8 @@ body {
 }
 
 .btn {
-  width: 100px;
-  height: 100px;
+  width: 300px;
+  height: 300px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -128,11 +128,11 @@ body {
   z-index: 1;
   background-color: #246424c5;
   color: #f8c400;
-  font-size: 0.8em;
+  font-size: 2.4em;
   text-shadow: 2px 2px 3px #f8c400a9;
   box-shadow: 2px 2px 5px black;
   border: 2px solid #f8c400;
-  border-radius: 50px;
+  border-radius: 150px;
   font-weight: 600;
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
@@ -160,5 +160,5 @@ body {
   padding: 10px 0;
   width: 100vw;
   height: 3vh;
-  font-size: 0.2em;
-}
+  font-size: 0.5em;
+  }
