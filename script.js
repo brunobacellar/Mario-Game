@@ -1,14 +1,14 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 const som = document.querySelector('.som');
-pipe.style.right = '-50px';
+pipe.style.right = `-${100}px`;
 let seconds = 0;
 let speed = 1000;
 const score = document.querySelector('.bestScore');
 
 const jump = () => {
   const pipePosition = pipe.offsetLeft;
-  if (pipePosition !== 432) {
+  if (pipePosition !== 980) {
     mario.classList.add('jump');
     setTimeout(() => {
       mario.classList.remove('jump');
@@ -19,8 +19,9 @@ const jump = () => {
 const loop = setInterval(() => {
   const pipePosition = pipe.offsetLeft;
   const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
+  
  
-  if (pipePosition <= 100 && pipePosition > 10 && marioPosition < 60) {
+  if (pipePosition <= 205 && pipePosition > 10 && marioPosition < 125) {
     
     pipe.style.animation = 'none';
     pipe.style.left = `${pipePosition}px`;
@@ -29,8 +30,8 @@ const loop = setInterval(() => {
     mario.style.bottom = `${marioPosition}px`;
     
     mario.src = 'game-over.png';
-    mario.style.width = '50px';
-    mario.style.marginLeft = '50px';
+    mario.style.width = '110px';
+    mario.style.marginLeft = '85px';
     
     som.src = 'gameoversong.mp3';
     som.removeAttribute('loop');
@@ -67,7 +68,7 @@ function play() {
     seconds++;
     timer.textContent = `TIME: ${seconds}`;
     
-    if (pipePosition <= 100 && pipePosition > 10 && marioPosition < 60) {
+    if (pipePosition <= 205 && pipePosition > 10 && marioPosition < 125) {
       seconds--;
       clearInterval(loopTimer);
     }
